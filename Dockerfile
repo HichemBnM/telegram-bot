@@ -8,7 +8,10 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install the application dependencies
-RUN npm install
+RUN npm install && \
+    npm install express@4 && \
+    npm i axios
+ 
 
 # Copy the rest of your project files into the container
 COPY . .
