@@ -11,7 +11,7 @@ app.post("/*", async (req, res) => {
 }); // Start the server 
 
 app.get("/*", (req, res) => {
-    res.get("hello get");
+    res.send("hello get");
 });
 
 
