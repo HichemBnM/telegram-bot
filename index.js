@@ -80,6 +80,8 @@ bot.onText(/\/profile (.+)/, async (msg, match) => {
     }
 });
 // --- Help command ---
+
+
 bot.onText(/\/help/, (msg) => {
     bot.sendMessage(msg.chat.id, `
 📌 Available Commands:
