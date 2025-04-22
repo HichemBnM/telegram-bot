@@ -11,13 +11,13 @@ COPY package*.json ./
 RUN npm install && \
     npm install express@4 && \
     npm i axios
- 
 
 # Copy the rest of your project files into the container
 COPY . .
-
+# Set environment variables for the applications
 # Expose the port the app will run on
 EXPOSE 3000
 
 # Command to run your application
 CMD ["node", "index.js"]
+# Use the following command to build the Docker image
