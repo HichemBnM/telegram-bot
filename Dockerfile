@@ -20,4 +20,5 @@ EXPOSE 3000
 
 # Command to run your application
 CMD ["node", "index.js"]
+# Build the Docker image
 # Use the following command to build the Docker image
