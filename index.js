@@ -46,6 +46,7 @@ bot.onText(/\/insta (.+)/, async (msg, match) => {
 });
 
 
+
 // --- Listen for /profile <username> command ---
 bot.onText(/\/profile (.+)/, async (msg, match) => {
     const username = match[1];
